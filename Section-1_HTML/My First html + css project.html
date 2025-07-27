@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shourya’s Dark Dev World</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(120deg, #0f0f0f, #1a1a1a, #0e0e0e);
+            color: #e0e0e0;
+            padding: 20px;
+            line-height: 1.6;
+            animation: pulseGlow 60s infinite linear;
+            background-size: 300% 300%;
+        }
+
+        @keyframes pulseGlow {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        header,
+        section,
+        footer {
+            animation: fadeInUp 1s ease forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        header {
+            animation-delay: 0.3s;
+        }
+
+        section:nth-of-type(1) {
+            animation-delay: 0.5s;
+        }
+
+        section:nth-of-type(2) {
+            animation-delay: 0.7s;
+        }
+
+        section:nth-of-type(3) {
+            animation-delay: 0.9s;
+        }
+
+        section:nth-of-type(4) {
+            animation-delay: 1.1s;
+        }
+
+        footer {
+            animation-delay: 1.3s;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 30px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 8px 24px rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.6em;
+            color: #ff4081;
+        }
+
+        header p {
+            font-size: 1.15em;
+            color: #bbbbbb;
+        }
+
+        section {
+            background: rgba(255, 255, 255, 0.025);
+            padding: 25px;
+            border-radius: 16px;
+            box-shadow: 0 4px 18px rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: #82b1ff;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        li {
+            padding: 4px 0;
+        }
+
+        a {
+            display: inline-block;
+            background: linear-gradient(to right, #ff4081, #f50057);
+            color: white;
+            padding: 8px 18px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 6px 0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        a:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px #f50057aa;
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #999;
+        }
+
+        .emoji {
+            font-size: 1.3em;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🌌 Welcome To My First Website! 🌌</h1>
+        <p>Just a boy in Delhi chasing clean code & chaos 💻</p>
+    </header>
+
+    <section>
+        <h2><span class="emoji">👋</span>Who Am I?</h2>
+        <p>
+            I'm <strong>Shourya Godiyal</strong>, a 19-year-old Computer Science student at Delhi University.
+            Currently diving deep into full-stack development, one bug at a time 🧠💻
+        </p>
+        <p>
+            This is my first handcrafted HTML + CSS page — a pixel-sized peek into the dev I’m becoming.
+        </p>
+    </section>
+
+    <section>
+        <h2><span class="emoji">🛠️</span> What I’m Learning</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React, Node.js, MongoDB (via Colt Steele’s course)</li>
+            <li>UI/UX magic — because good vibes deserve good design ✨</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2><span class="emoji">🔗</span> Stalk Me (Please)</h2>
+        <ul>
+            <li><a href="https://github.com/shourya-godiyal" target="_blank">My GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/shourya-godiyal-102460335" target="_blank">LinkedIn</a></li>
+            <li><a href="mailto:shouryagodiyal18@gmail.com">Email me?</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2><span class="emoji">🌱</span> The Master Plan</h2>
+        <p>
+            📅 Finish the dev course by <strong>1st Nov 2025</strong>
+            🚀 Build 3 awesome projects
+            🎯 Land my first internship early 2026
+            <br><br>
+            This page is the first footprint in that journey. Watch me grow 🌱
+        </p>
+    </section>
+
+    <footer>
+        <p>Made with 💗, caffeine ☕, and midnight code rants in Delhi | &copy; 2025 Shourya G.</p>
+    </footer>
+
+</body>
+
+</html>
